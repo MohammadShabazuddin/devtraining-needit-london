@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="hasLabels=true" label="Needit" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="shabaz" label="Name1" mandatory="true" max_length="40" name="name" type="string"/>
+        <element label="subject1" max_length="40" name="sub1" type="integer"/>
+        <element label="subject2" max_length="40" name="sub2" type="integer"/>
+        <element label="Total" max_length="40" name="total" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Facilities" sequence="0" value="fecalties"/>
+                <element inactive="true" inactive_on_update="true" label="Facilities" sequence="0" value="Choice 1"/>
+                <element inactive="true" inactive_on_update="true" label="hr" sequence="0" value="Choice 2"/>
+                <element inactive="true" inactive_on_update="true" label="Human Resources" sequence="0" value="Human Resources"/>
+                <element inactive_on_update="false" label="legal" sequence="0" value="legal"/>
+                <element inactive_on_update="false" label="hr" sequence="1" value="hr"/>
+                <element inactive="true" inactive_on_update="true" label="Legal" sequence="1" value="Choice 3"/>
+                <element inactive_on_update="false" label="facilities" sequence="2" value="facilities"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="Choice 1" label="What Needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Facilities" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Human Resources" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+    </element>
+</database>
